@@ -1,5 +1,6 @@
 import ProductCard from "./ProductCard";
 import { ProductData } from "../ProductData";
+import { Fragment } from "react";
 
 export default function ProductGrid (props) {
     let itemList = [];
@@ -11,8 +12,23 @@ export default function ProductGrid (props) {
     });
 
     return (
-        <div id='Product-grid'>
-            {itemList}
+        <div className="Product-section">
+            <div className="Shop-area-header Sort-by-header">
+                <div className="Sort-by f-medium">
+                    <label className="text-muted" htmlFor="Sort-methods">Sort by &nbsp;</label>
+                    <select id="Sort-methods">
+                        <option value="volvo">Featured</option>
+                        <option value="saab">Price, low to high</option>
+                        <option value="fiat">Price, high to low</option>
+                        <option value="audi">Best selling</option>
+                    </select>
+                </div>
+            </div>
+            <div id="Product-grid">
+                {itemList}
+            </div>
         </div>
+            
+
     );
 }

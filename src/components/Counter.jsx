@@ -9,7 +9,7 @@ const Counter = (props) => {
             <div className="Counter">
                 <button onClick={() => increaseCartQty(props.item_id)}>+</button>
                 <input 
-                    type='number' min="0" max="99999" 
+                    type='number' min="0" max="999" 
                     value={cartCounterQty}
                     onChange={(e) => setCartQty(props.item_id, e.target.value)}>    
                 </input>

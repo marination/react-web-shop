@@ -16,15 +16,13 @@ const CartItemRow = (props) => {
                 </h4>
             </div>
             <Counter item_id={item_data.id}></Counter>
-            <div style={{"padding": "0 1rem"}}><b>{"₹ " + item_price}</b></div>
+            <div className='Cart-price-container'><b>{"₹ " + item_price}</b></div>
         </div>
     );
 }
 
 const CartPreview = () => {
     const { cartItems, cartQty, isCartOpen, toggleCartState } = useCart();
-    let cartHeader = cartQty > 1 ? cartQty + " Items" : cartQty + " Item"
-    
 
     let cartItemsList = [];
     Object.keys(cartItems).forEach((item_id) => {
@@ -47,10 +45,10 @@ const CartPreview = () => {
                 <header className='Cart-header'>
                     <div className='Cart-title' style={{'width':'30%'}}>
                         <svg className='icon' focusable='false' width='20' height='18' viewBox='0 0 20 18'>
-                            <path d='M3 1h14l1 16H2L3 1z' fill='none' stroke='#7275d2' strokeWidth='2'></path>
-                            <path d='M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0' fill='none' stroke='#7275d2' strokeWidth='2'></path>
+                            <path d='M3 1h14l1 16H2L3 1z' fill='none' stroke='#7275d2' strokeWidth='3'></path>
+                            <path d='M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0' fill='none' stroke='#7275d2' strokeWidth='3'></path>
                         </svg>
-                        <div>{cartQty > 0 ? cartHeader : "Cart"}</div>
+                        <div>CART ITEMS</div>
                     </div>
                     <div 
                         style={{'width':'50%', 'display': 'flex', 'justifyContent': 'right'}} 

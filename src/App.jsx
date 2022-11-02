@@ -1,6 +1,8 @@
 import Countdown from 'react-countdown';
-import './assets/App.css';
+import './assets/styles/App.css';
 import Navbar from './components/Navbar';
+import Filters from './components/Filters';
+import MobileFilters from './components/MobileFilters';
 import ProductGrid from './components/ProductGrid';
 import CartProvider from './context/CartContext';
 
@@ -12,16 +14,18 @@ function App() {
     <div className='Shop'>
       <CartProvider>
         <Navbar></Navbar>
+
+        <MobileFilters></MobileFilters>
+
         <div className='Count-down'>
-          <span>Sale ends in : </span>
-          <nbsp></nbsp>
+          <span>Sale ends in :&nbsp;</span>
           <span style={{"color": "#e76161"}}>
             <Countdown date={today}></Countdown>
           </span>
         </div>
-
+        
         <div className='Shop-area'>
-          <div id='Filters-container'>Filters</div>
+          <Filters></Filters>
           <ProductGrid></ProductGrid>
         </div>
       </CartProvider>

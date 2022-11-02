@@ -22,9 +22,8 @@ const ProductCard = (props) => {
 
         <div className='Item-price-details'>
         <p className='m-0'>
-          <span className='f-medium'><b>{"Rs." + data.price} </b></span>
-          <span className='text-muted f-small'><s>{"Rs." + data.old_price}</s></span>
-          <span className='orange-text f-small'> (50% OFF)</span>
+          <span className='f-medium purple-text'><b> {"₹"}&nbsp;{data.price} </b></span>
+          <span className='text-muted f-small'><s>{"₹"}&nbsp;{data.old_price}</s></span>
         </p>
       </div>
 

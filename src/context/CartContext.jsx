@@ -21,7 +21,6 @@ function CartProvider (props) {
         setCartItems(prevcartItems => {
             let cartItems = Object.assign({}, prevcartItems);
             cartItems[id] = cartItems[id] ? (parseInt(cartItems[id]) + 1) : 1;
-            console.log(cartItems);
             window.localStorage.setItem('cart_items', JSON.stringify(cartItems));
             return {...cartItems};
         });
