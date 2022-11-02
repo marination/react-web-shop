@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/react-web-shop/static/css/main.7e4df699.css",
+    "main.js": "/react-web-shop/static/js/main.b4d1379f.js",
+    "static/media/015.jpeg": "/react-web-shop/static/media/015.02742d8e5e6aea89f2e5.jpeg",
+    "static/media/001.jpg": "/react-web-shop/static/media/001.c1975c1bab328d5f8e29.jpg",
+    "static/media/007.jpeg": "/react-web-shop/static/media/007.a79f427e67f4ebdff396.jpeg",
+    "static/media/003.jpg": "/react-web-shop/static/media/003.a72259e8ec5239dad5fb.jpg",
+    "static/media/013.jpg": "/react-web-shop/static/media/013.0c51bb21061f213d909d.jpg",
+    "static/media/012.webp": "/react-web-shop/static/media/012.946245c89c25c8bf7e3b.webp",
+    "static/media/002.webp": "/react-web-shop/static/media/002.331085b252c344413814.webp",
+    "static/media/009.webp": "/react-web-shop/static/media/009.7702c2953001e816f18b.webp",
+    "static/media/014.jpeg": "/react-web-shop/static/media/014.a7d2720ddf9580d4fa26.jpeg",
+    "static/media/010.jpg": "/react-web-shop/static/media/010.0093f54f35b029a918d4.jpg",
+    "static/media/008.webp": "/react-web-shop/static/media/008.d3f521a5d4a29fda80e9.webp",
+    "static/media/011.webp": "/react-web-shop/static/media/011.87a94f8d0f9b526598bc.webp",
+    "static/media/005.jpg": "/react-web-shop/static/media/005.ba8a02a8502d5c8ba698.jpg",
+    "static/media/006.jpg": "/react-web-shop/static/media/006.a64139f202a98fab958c.jpg",
+    "static/media/004.jpg": "/react-web-shop/static/media/004.3b96cd64b00685f8506c.jpg",
+    "index.html": "/react-web-shop/index.html",
+    "static/media/sliders.svg": "/react-web-shop/static/media/sliders.fe794ef6a8a71ca080779df9bddc60df.svg",
+    "static/media/plus.svg": "/react-web-shop/static/media/plus.d85d0bcc55613995b7ae2d62cfae699a.svg",
+    "static/media/cart.svg": "/react-web-shop/static/media/cart.bc3ef1528e96e05a7dfe31efe1c14141.svg",
+    "main.7e4df699.css.map": "/react-web-shop/static/css/main.7e4df699.css.map",
+    "main.b4d1379f.js.map": "/react-web-shop/static/js/main.b4d1379f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e4df699.css",
+    "static/js/main.b4d1379f.js"
+  ]
+}
