@@ -7,7 +7,7 @@ const ProductCard = (props) => {
   return (
     <div className='Item-container'>
       <div className='Item-image'>
-        <img className='Item-image-actual' src={data.image} alt='logo-image'></img>
+        <img className='Item-image-actual' src={data.image} alt={data.name}></img>
         <div className='Item-ratings f-small'>
           <b>{data.ratings}</b> ⭐️  |  <b>{data.reviews}</b>
         </div>

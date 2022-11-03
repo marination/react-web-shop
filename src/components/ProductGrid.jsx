@@ -1,6 +1,5 @@
 import ProductCard from "./ProductCard";
 import { ProductData } from "../ProductData";
-import { Fragment } from "react";
 
 export default function ProductGrid (props) {
     let itemList = [];

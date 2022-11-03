@@ -16,15 +16,19 @@
 .Filter-row-header-icon {
     display: flex;
     width: 50%;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-    transition: all 0.3s cubic-bezier(0.47, 0, 0.88, 0.69);
-    transform: rotate(0deg);
 }
 
-.Filter-row-header-icon[open] > svg {
-    transform: rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.47, 0, 0.88, 0.69);
+.Filter-row-header-icon > svg > .vertical-line {
+    transform: scale(1);
+    transition: transform 0.3s cubic-bezier(0.47, 0, 0.88, 0.69);
+    transform-origin: center;
+}
+
+.Filter-row-header-icon[open] > svg > .vertical-line {
+    transform: scale(0);
+    transition: transform 0.3s cubic-bezier(0.47, 0, 0.88, 0.69);
 }
 
 .Filter-row-header-icon > svg {

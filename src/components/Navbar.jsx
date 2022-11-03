@@ -21,7 +21,7 @@ const CartIconNav = () => {
 }
 
 const Navbar = () => {
-    const { cartQty, isCartOpen, toggleCartState } = useCart();
+    const { cartQty, toggleCartState } = useCart();
 
     function isMobile() {
       return ( ( window.innerWidth <= 800 ) );

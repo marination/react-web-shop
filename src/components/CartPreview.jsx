@@ -22,7 +22,7 @@ const CartItemRow = (props) => {
 }
 
 const CartPreview = () => {
-    const { cartItems, cartQty, isCartOpen, toggleCartState } = useCart();
+    const { cartItems, isCartOpen, toggleCartState } = useCart();
 
     let cartItemsList = [];
     Object.keys(cartItems).forEach((item_id) => {
@@ -69,7 +69,7 @@ const CartPreview = () => {
                         Checkout | {"₹" + totalAmount}
                     </button>
                     <p className='text-muted f-small' style={{'textTransform': 'capitalize'}}>
-                        No account? <a href='#'>Sign up now.</a>
+                        No account? <a href='https://github.com/marination'>Sign up now.</a>
                     </p>
                 </section>
                 

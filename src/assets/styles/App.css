@@ -294,7 +294,7 @@ input[type=checkbox] {
 }
 
 .Sort-by-header {
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: var(--container-gutter-sm);
 }
 
@@ -355,6 +355,10 @@ input[type=checkbox] {
 
   .Cart-price-container {
     padding: 0 0.8rem;
+  }
+
+  .Sort-by-header {
+    display: none;
   }
 
 }
