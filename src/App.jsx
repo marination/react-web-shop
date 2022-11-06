@@ -2,7 +2,7 @@ import Countdown from 'react-countdown';
 import './assets/styles/App.css';
 import Navbar from './components/Navbar';
 import Filters from './components/Filters';
-import MobileFilters from './components/MobileFilters';
+import { MobileFiltersToggler, MobileFiltersDrawer } from './components/MobileFilters';
 import ProductGrid from './components/ProductGrid';
 import CartProvider from './context/CartContext';
 
@@ -15,7 +15,9 @@ function App() {
       <CartProvider>
         <Navbar></Navbar>
 
-        <MobileFilters></MobileFilters>
+        <MobileFiltersToggler></MobileFiltersToggler>
+        <MobileFiltersDrawer></MobileFiltersDrawer>
+        
 
         <div className='Count-down'>
           <span>Sale ends in :&nbsp;</span>

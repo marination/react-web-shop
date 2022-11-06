@@ -4,7 +4,7 @@ import { ProductData } from '../ProductData';
 import FilterSection from './FilterBuilder';
 
 
-const BrandFilters = () => {
+export const BrandFilters = () => {
     const Brands = new Set()
     Object.keys(ProductData).forEach((key) => {
         Brands.add(ProductData[key].brand);
@@ -15,7 +15,7 @@ const BrandFilters = () => {
     );
 }
 
-const CategoryFilters = () => {
+export const CategoryFilters = () => {
     const Categories = new Set()
     Object.keys(ProductData).forEach((key) => {
         Categories.add(ProductData[key].category);
