@@ -74,6 +74,8 @@
 }
 
 #Filters-drawer-mobile {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 70px;
     z-index: 5;
