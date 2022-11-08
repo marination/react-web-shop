@@ -84,7 +84,6 @@ input[type=checkbox] {
 	padding: 0px 20px;
 	display: flex;
 	align-items: center;
-	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 500;
 	color: var(--primary-purple);

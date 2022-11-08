@@ -6,7 +6,7 @@ import { ReactComponent as CartIcon } from "../assets/icons/cart.svg";
 const CartBtnWithQty = ({qty}) => {
   return (
     <Fragment>
-      <span>CART</span>
+      <span>Cart</span>
       <span className='Cart-label'>{ qty }</span>
     </Fragment>  
   );
