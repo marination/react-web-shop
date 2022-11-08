@@ -41,7 +41,8 @@ export const ProductData = {
         "old_price": 4999,
         "ratings": 3.3,
         "reviews": "2.3k",
-        "category": "Earphones"
+        "category": "Earphones",
+        "new": true
     },
     "005": {
         "name": "Black Solid Pulse Ace Bluetooth Calling Fitness Smartwatch", 
@@ -71,7 +72,8 @@ export const ProductData = {
         "old_price": 22995,
         "ratings": 4.1,
         "reviews": "359",
-        "category": "Watches"
+        "category": "Watches",
+        "new": true
     },
     "008": {
         "name": "Ninja Unisex Touch to Wake SpO2 Smartwatch 07BSWAAY - Beige", 
@@ -111,7 +113,8 @@ export const ProductData = {
         "old_price": 19999,
         "ratings": 4.4,
         "reviews": "26.7k",
-        "category": "Mobiles"
+        "category": "Mobiles",
+        "new": true
     },
     "012": {
         "name": "Black Solid Portable Bluetooth Speaker", 
@@ -131,7 +134,8 @@ export const ProductData = {
         "old_price": 4999,
         "ratings": "4.2",
         "reviews": "12k",
-        "category": "Earphones"
+        "category": "Earphones",
+        "new": true
     },
     "014": {
         "name": "Pink & Black Luxe Lunar Sleep Tracking Stress & Heart Rate Fitness Band", 

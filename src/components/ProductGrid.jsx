@@ -14,7 +14,7 @@ export default function ProductGrid (props) {
         <div className="Product-section">
             <div className="Shop-area-header Sort-by-header">
                 <div className="Sort-by f-medium">
-                    <label className="text-muted" htmlFor="Sort-methods">Sort by &nbsp;</label>
+                    <label className="text-muted" htmlFor="Sort-methods">Sort by : &nbsp;</label>
                     <select id="Sort-methods">
                         <option value="volvo">Featured</option>
                         <option value="saab">Price, low to high</option>

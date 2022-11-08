@@ -1,5 +1,5 @@
 
-import AddToCartBtn from "./AddToCart";
+import { AddToCartBtn, AddedtoCartBtn } from "./AddToCart";
 
 const ProductCard = (props) => {
   let data = props.item;
@@ -8,11 +8,20 @@ const ProductCard = (props) => {
     <div className='Item-container'>
       <div className='Item-image'>
         <img className='Item-image-actual' src={data.image} alt={data.name}></img>
+
+        {
+          data.new && <div className="New-label f-small">New Trend</div>
+        }
+
+        {/* Ratings */}
         <div className='Item-ratings f-small'>
           <b>{data.ratings}</b> ⭐️  |  <b>{data.reviews}</b>
         </div>
+
+        {/* Cart Button */}
         <div className="overlay">
           <AddToCartBtn class="Micro-add-to-cart" item_id={props.id}></AddToCartBtn>
+          <AddedtoCartBtn item_id={props.id}></AddedtoCartBtn>
         </div>
       </div>
 
