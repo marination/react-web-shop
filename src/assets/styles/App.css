@@ -25,6 +25,10 @@ html {
  scroll-behavior: smooth;
 }
 
+a {
+	text-decoration: none;
+}
+
 h3, h4 {
 	margin: 0px;
 }
@@ -266,6 +270,7 @@ input[type=checkbox] {
 .Shop-area {
 	display: flex;
 	width: 100%;
+	margin-bottom: 2em;
 }
 
 .Shop-area-header {
@@ -546,4 +551,16 @@ input[type=checkbox] {
 	width: 0;
 	height: 0;
 	top: 0;
+}
+
+.Footer-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 2em 0;
+	background-image: linear-gradient(90deg,#f9f9ff,#dee8ff);
+}
+
+.Footer-container > div {
+	margin: 0 2em;
 }
