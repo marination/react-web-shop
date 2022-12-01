@@ -21,6 +21,7 @@ function CartProvider (props) {
         setCartItems(prevcartItems => {
             let cartItems = Object.assign({}, prevcartItems);
             cartItems[id] = cartItems[id] ? (parseInt(cartItems[id]) + 1) : 1;
+
             window.localStorage.setItem('cart_items', JSON.stringify(cartItems));
             return {...cartItems};
         });
@@ -29,7 +30,8 @@ function CartProvider (props) {
     function decreaseCartQty(id) {
         setCartItems(prevcartItems => {
             let cartItems = Object.assign({}, prevcartItems);
-            if (cartItems[id] <= 0) {
+            if (parseInt(cartItems[id]) === 1) {
+                // Before qty - 1, if qty is 1 it will become 0
                 delete cartItems[id];
             } else {
                 cartItems[id] = parseInt(cartItems[id]) - 1;
@@ -48,12 +50,24 @@ function CartProvider (props) {
             return {...cartItems};
         });
     }
+
+    function removeCartItem(id) {
+        setCartItems(prevcartItems => {
+            let cartItems = Object.assign({}, prevcartItems);
+            delete cartItems[id];
+
+            window.localStorage.setItem('cart_items', JSON.stringify(cartItems));
+            return {...cartItems};
+        });
+    }
+
     return (
         <CartState.Provider value={{ 
             getItemQty, 
             increaseCartQty,
             decreaseCartQty,
             setCartQty,
+            removeCartItem,
             cartItems,
             cartQty,
             isCartOpen,
