@@ -9,16 +9,16 @@
 }
 
 ::placeholder {
-	color: #7275d2;
+	color: var(--primary-purple);
 	opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: #7275d2;
+ color: var(--primary-purple);
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
- color: #7275d2;
+ color: var(--primary-purple);
 }
 
 html {
@@ -135,7 +135,7 @@ div[role=button], button {
 	padding: 8px;
 	border-radius: 50%;
 	font-size: 12px;
-	background-color: #7275d2;
+	background-color: var(--primary-purple);
 	color: white;
 }
 
@@ -214,6 +214,14 @@ div[role=button], button {
 	border-bottom: 1px solid var(--root-border-color);
 	height: 75%;
 	overflow-y: scroll;
+}
+
+.Cart-slider-empty-state {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
 .Cart-item {

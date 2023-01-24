@@ -2,6 +2,16 @@ import { useCart } from '../context/CartContext';
 import {CartSliderItem} from './CartSliderItem';
 import { ProductData } from '../ProductData';
 import {ReactComponent as Cross} from '../assets/icons/cross.svg';
+import {ReactComponent as EmptyCart} from '../assets/illustrations/empty-cart.svg';
+
+const CartEmptyState = () => {
+	return (
+		<div className='Cart-slider-empty-state'>
+			<EmptyCart></EmptyCart>
+			<div className='pt-p5'>Your cart is empty. Add some items!</div>
+		</div>
+	);
+}
 
 const CartPreview = () => {
 	const { cartItems, isCartOpen, toggleCartState } = useCart();
@@ -21,7 +31,6 @@ const CartPreview = () => {
 		'en-US', {maximumFractionDigits:2}
 	);
 
-
 	return (
 		<div className='Cart-preview-container' open={isCartOpen}>
 			<span className='Cart-overlay' onClick={ () => toggleCartState(isCartOpen => !isCartOpen)}></span>
@@ -40,7 +49,7 @@ const CartPreview = () => {
 				</header>
 
 				<main className='Cart-items-container'>
-					{cartItemsList}
+					{ cartItemsList.length ? cartItemsList : <CartEmptyState></CartEmptyState> }
 				</main>
 
 				<section className='Checkout-CTA'>
