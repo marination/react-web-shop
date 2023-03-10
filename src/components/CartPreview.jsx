@@ -2,13 +2,13 @@ import { useCart } from '../context/CartContext';
 import {CartSliderItem} from './CartSliderItem';
 import { ProductData } from '../ProductData';
 import {ReactComponent as Cross} from '../assets/icons/cross.svg';
-import {ReactComponent as EmptyCart} from '../assets/illustrations/empty-cart.svg';
+import {ReactComponent as EmptyCart} from '../assets/illustrations/empty-cart-sm.svg';
 
 const CartEmptyState = () => {
 	return (
 		<div className='Cart-slider-empty-state'>
 			<EmptyCart></EmptyCart>
-			<div className='pt-p5'>Your cart is empty. Add some items!</div>
+			<div className='pt-2'>Your cart is empty. Add some items!</div>
 		</div>
 	);
 }
@@ -23,7 +23,8 @@ const CartPreview = () => {
 		cartItemsList.push(
 			<CartSliderItem item_data={item_data} cart_qty={cartItems[item_id]} key={item_id}></CartSliderItem>
 		)
-	})
+	});
+	let isCartEmpty = !cartItemsList.length;
 
 	let totalAmount = Object.keys(cartItems).reduce((result, key) => {
 		return result + (parseInt(cartItems[key]) * parseInt(ProductData[key].price))
@@ -49,7 +50,7 @@ const CartPreview = () => {
 				</header>
 
 				<main className='Cart-items-container'>
-					{ cartItemsList.length ? cartItemsList : <CartEmptyState></CartEmptyState> }
+					{ isCartEmpty ? <CartEmptyState></CartEmptyState> : cartItemsList }
 				</main>
 
 				<section className='Checkout-CTA'>
