@@ -512,6 +512,14 @@ div[role=button], button {
 	padding-top: .5rem;
 }
 
+.pt-1 {
+	padding-top: 1rem;
+}
+
+.pt-2 {
+	padding-top: 2rem;
+}
+
 .pb-5 {
 	padding-bottom: 5px;
 }
@@ -524,6 +532,32 @@ div[role=button], button {
 }
 .f-normal {
 	font-size: 16px;
+}
+
+.Mobile-micro-cart-btn {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+    padding: 0.5rem 0.5rem 0.15rem 0.5rem;
+    border-radius: 50%;
+	box-shadow: 0 2px 6px rgb(17 43 66 / 8%), 0 1px 4px rgb(17 43 66 / 10%);
+	background-color: rgb(255, 255, 255, 0.9);
+	overflow: hidden;
+	border: none;
+	color: var(--primary-purple);
+}
+
+.feather-shopping-cart {
+	position: relative;
+}
+
+.Mobile-micro-cart-btn.clicked {
+	color: white;
+	background: forestgreen;
+}
+
+.feather-shopping-cart.clicked{
+	animation: wiggle .5s linear;
 }
 
 .Micro-cart-btn { 

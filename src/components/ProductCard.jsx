@@ -1,8 +1,21 @@
 
-import { AddToCartBtn, AddedtoCartBtn } from "./AddToCart";
+import { AddToCartBtn, AddedtoCartBtn, CartBtnMobile } from "./AddToCart";
+
+const CartBtnDesktop = (id) => {
+	return (
+		<div className="overlay">
+			<AddToCartBtn class="Micro-add-to-cart" item_id={id}></AddToCartBtn>
+			<AddedtoCartBtn item_id={id}></AddedtoCartBtn>
+		</div>
+	);
+}
 
 const ProductCard = (props) => {
   let data = props.item;
+
+  function isMobile() {
+	return ( ( window.innerWidth <= 800 ) );
+  }
 
   return (
 	<div className='Item-container'>
@@ -17,10 +30,12 @@ const ProductCard = (props) => {
 			</div>
 
 			{/* Cart Button */}
-			<div className="overlay">
-				<AddToCartBtn class="Micro-add-to-cart" item_id={props.id}></AddToCartBtn>
-				<AddedtoCartBtn item_id={props.id}></AddedtoCartBtn>
-			</div>
+			{
+				!isMobile() ? 
+					<CartBtnDesktop id={props.id}></CartBtnDesktop> 
+				: 
+					<CartBtnMobile item_id={props.id}></CartBtnMobile>
+			}
 		</div>
 
 		<div className='Item-meta-details'>
