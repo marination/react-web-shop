@@ -8,28 +8,28 @@ import CartProvider from './context/CartContext';
 import { Footer } from './components/Footer';
 
 function App() {
-  return (
-    <div className='Shop'>
-      <CartProvider>
-        <Navbar></Navbar>
+	return (
+		<div className='Shop'>
+			<CartProvider>
+				<Navbar></Navbar>
 
-        <MobileFiltersToggler></MobileFiltersToggler>
-        <MobileFiltersDrawer></MobileFiltersDrawer>
+				<MobileFiltersToggler></MobileFiltersToggler>
+				<MobileFiltersDrawer></MobileFiltersDrawer>
 
-        <CountDown></CountDown>
-        
-        <div className='Shop-area'>
-          <Filters></Filters>
-          <ProductGrid></ProductGrid>
-        </div>
-      </CartProvider>
+				<CountDown></CountDown>
+				
+				<div className='Shop-area'>
+					<Filters></Filters>
+					<ProductGrid></ProductGrid>
+				</div>
+			</CartProvider>
 
-      <Footer></Footer>
-    </div>
-    
-    
-    
-  );
+			<Footer></Footer>
+		</div>
+		
+		
+		
+	);
 }
 
 export default App;

@@ -5,38 +5,38 @@ import FilterSection from './FilterBuilder';
 
 
 export const BrandFilters = () => {
-    const Brands = new Set()
-    Object.keys(ProductData).forEach((key) => {
-        Brands.add(ProductData[key].brand);
-    })
+	const Brands = new Set()
+	Object.keys(ProductData).forEach((key) => {
+		Brands.add(ProductData[key].brand);
+	})
 
-    return (
-        <FilterSection title={'Brands'} filterValues={Brands} type={'brand'}></FilterSection>
-    );
+	return (
+		<FilterSection title={'Brands'} filterValues={Brands} type={'brand'}></FilterSection>
+	);
 }
 
 export const CategoryFilters = () => {
-    const Categories = new Set()
-    Object.keys(ProductData).forEach((key) => {
-        Categories.add(ProductData[key].category);
-    })
+	const Categories = new Set()
+	Object.keys(ProductData).forEach((key) => {
+		Categories.add(ProductData[key].category);
+	})
 
-    return (
-        <FilterSection title={'Categories'} filterValues={Categories} type={'category'}></FilterSection>
-    );
-    
+	return (
+		<FilterSection title={'Categories'} filterValues={Categories} type={'category'}></FilterSection>
+	);
+	
 }
 
 export default function Filters () {
-    return (
-        <div id='Filters-container'>
-            <div className="Shop-area-header Filters-header">
-                <span>Filters</span>
-            </div>
+	return (
+		<div id='Filters-container'>
+			<div className="Shop-area-header Filters-header">
+				<span>Filters</span>
+			</div>
 
-            <BrandFilters></BrandFilters>
-            <CategoryFilters></CategoryFilters>
-        </div>
-        
-    );
+			<BrandFilters></BrandFilters>
+			<CategoryFilters></CategoryFilters>
+		</div>
+		
+	);
 }
