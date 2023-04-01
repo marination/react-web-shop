@@ -556,10 +556,6 @@ div[role=button], button {
 	background: forestgreen;
 }
 
-.feather-shopping-cart.clicked{
-	animation: wiggle .5s linear;
-}
-
 .Micro-cart-btn { 
 	color: white;
 	padding: 10px;

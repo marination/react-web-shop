@@ -66,7 +66,6 @@ export const CartBtnMobile = (props) => {
 			id={"Mobile-add-to-cart-" + props.item_id}
 			className="Mobile-micro-cart-btn"
 			onClick={animateMobileAddtoCart}
-			role="button"
 		>
 			<ShoppingCartIcon></ShoppingCartIcon>
 		</button>

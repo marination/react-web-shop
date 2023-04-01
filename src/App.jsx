@@ -13,13 +13,14 @@ function App() {
 			<CartProvider>
 				<Navbar></Navbar>
 
-				<MobileFiltersToggler></MobileFiltersToggler>
-				<MobileFiltersDrawer></MobileFiltersDrawer>
-
 				<CountDown></CountDown>
 				
 				<div className='Shop-area'>
+					<MobileFiltersToggler></MobileFiltersToggler>
+					<MobileFiltersDrawer></MobileFiltersDrawer>
+
 					<Filters></Filters>
+					
 					<ProductGrid></ProductGrid>
 				</div>
 			</CartProvider>

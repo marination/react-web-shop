@@ -14,21 +14,20 @@ const CartBtnWithQty = ({qty}) => {
 }
 
 const CartIconNav = ({qty}) => {
-	let first_render = useRef(true);
+	let first_render = useRef(qty);
 
 	useEffect(() => {
 		// animate on change in cart qty
-		if (!first_render.current) {
+		if (first_render.current !== qty) {
 			let cart_icon = document.getElementsByClassName("Nav-cart-icon")[0];
 			cart_icon.classList.add("cart-animate");
 
 			setTimeout(() => {
 				cart_icon.classList.remove("cart-animate");
+				first_render.current = qty;
 			}, 2000)
 
 		}
-
-		first_render.current = false;
 
 	}, [qty])
 

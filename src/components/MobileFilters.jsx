@@ -29,7 +29,7 @@ export const MobileFiltersDrawer = () => {
 			 <header className="Shop-area-header">
 				<span className="Filters-header" style={{"flexGrow": 1}}>Filters</span>
 				<span  className="f-medium Clear-filters" onClick={toggleFilterDrawer}>
-					<u>Clear all</u>
+					<u>Close</u>
 				</span>
 			</header>
 

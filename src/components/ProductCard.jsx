@@ -1,11 +1,11 @@
 
 import { AddToCartBtn, AddedtoCartBtn, CartBtnMobile } from "./AddToCart";
 
-const CartBtnDesktop = (id) => {
+const CartBtnDesktop = (props) => {
 	return (
 		<div className="overlay">
-			<AddToCartBtn class="Micro-add-to-cart" item_id={id}></AddToCartBtn>
-			<AddedtoCartBtn item_id={id}></AddedtoCartBtn>
+			<AddToCartBtn class="Micro-add-to-cart" item_id={props.item_id}></AddToCartBtn>
+			<AddedtoCartBtn item_id={props.item_id}></AddedtoCartBtn>
 		</div>
 	);
 }
@@ -32,7 +32,7 @@ const ProductCard = (props) => {
 			{/* Cart Button */}
 			{
 				!isMobile() ? 
-					<CartBtnDesktop id={props.id}></CartBtnDesktop> 
+					<CartBtnDesktop item_id={props.id}></CartBtnDesktop> 
 				: 
 					<CartBtnMobile item_id={props.id}></CartBtnMobile>
 			}
