@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 const CartState = createContext();
 
@@ -7,8 +8,7 @@ export function useCart() {
 }
 
 function CartProvider (props) {
-	let cart_items = JSON.parse(window.localStorage.getItem('cart_items')) || {};
-	const [cartItems, setCartItems] = useState(cart_items);
+	const [cartItems, setCartItems] = useLocalStorage("cart_items", {});
 	const [isCartOpen, toggleCartState] = useState(false);
 
 	const cartQty = Object.keys(cartItems).length;
@@ -22,7 +22,6 @@ function CartProvider (props) {
 			let cartItems = Object.assign({}, prevcartItems);
 			cartItems[id] = cartItems[id] ? (parseInt(cartItems[id]) + 1) : 1;
 
-			window.localStorage.setItem('cart_items', JSON.stringify(cartItems));
 			return {...cartItems};
 		});
 	}
@@ -37,7 +36,6 @@ function CartProvider (props) {
 				cartItems[id] = parseInt(cartItems[id]) - 1;
 			}
 			
-			window.localStorage.setItem('cart_items', JSON.stringify(cartItems));
 			return {...cartItems};
 		});
 	}
@@ -46,7 +44,6 @@ function CartProvider (props) {
 		setCartItems(prevcartItems => {
 			let cartItems = Object.assign({}, prevcartItems);
 			cartItems[id] = qty;
-			window.localStorage.setItem('cart_items', JSON.stringify(cartItems));
 			return {...cartItems};
 		});
 	}
@@ -55,8 +52,6 @@ function CartProvider (props) {
 		setCartItems(prevcartItems => {
 			let cartItems = Object.assign({}, prevcartItems);
 			delete cartItems[id];
-
-			window.localStorage.setItem('cart_items', JSON.stringify(cartItems));
 			return {...cartItems};
 		});
 	}
