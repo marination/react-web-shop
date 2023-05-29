@@ -6,7 +6,7 @@ export const CountDown = () => {
 
 		return (
 				<div className='Count-down'>
-					<span>Sale ends in :&nbsp;</span>
+					<span>Sale Ends In :&nbsp;</span>
 					<span style={{"color": "#e76161"}}>
 						<Countdown date={today}></Countdown>
 					</span>
