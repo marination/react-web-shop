@@ -11,7 +11,8 @@ export const ProductData = {
         "old_price": 4999,
         "ratings": 4.2,
         "reviews": "3.3k",
-        "category": "Watches"
+        "category": "Watches",
+        "images": [paths[0]],
     },
     "002": {
         "name": "Black Ninja Call 2 Bluetooth Calling Smart Watch 25BSWAAY#1", 
@@ -21,7 +22,8 @@ export const ProductData = {
         "old_price": 7999,
         "ratings": 4.3,
         "reviews": "4.7k",
-        "category": "Watches"
+        "category": "Watches",
+        "images": [paths[1]],
     },
     "003": {
         "name": "boAt Airdopes 441 Pro True Wireless Earbuds", 
@@ -31,7 +33,8 @@ export const ProductData = {
         "old_price": 6990,
         "ratings": 3.9,
         "reviews": "19k",
-        "category": "Earphones"
+        "category": "Earphones",
+        "images": [paths[2]],
     },
     "004": {
         "name": "Black AirBass XPods True Wireless Bluetooth Earbuds", 
@@ -52,7 +55,8 @@ export const ProductData = {
         "old_price": 3999,
         "ratings": 3.8,
         "reviews": "26",
-        "category": "Watches"
+        "category": "Watches",
+        "images": [paths[4]],
     },
     "006": {
         "name": "Blue Solid Wired In Ear Headphones", 
@@ -62,7 +66,8 @@ export const ProductData = {
         "old_price": 599,
         "ratings": 3.8,
         "reviews": "26",
-        "category": "Headphones"
+        "category": "Headphones",
+        "images": [paths[5]],
     },
     "007": {
         "name": "Men Grey The Carlyle HR Gen 5 Smartwatch FTW4024", 
@@ -73,7 +78,8 @@ export const ProductData = {
         "ratings": 4.1,
         "reviews": "359",
         "category": "Watches",
-        "new": true
+        "new": true,
+        "images": [paths[6]],
     },
     "008": {
         "name": "Ninja Unisex Touch to Wake SpO2 Smartwatch 07BSWAAY - Beige", 
@@ -83,7 +89,8 @@ export const ProductData = {
         "old_price": 4999,
         "ratings": 4.1,
         "reviews": "4k",
-        "category": "Watches"
+        "category": "Watches",
+        "images": [paths[7]],
     },
     "009": {
         "name": "IdeaPad 3 Core i3 11th Gen - (8 GB/512 GB SSD/Windows 11 Home)", 
@@ -93,7 +100,8 @@ export const ProductData = {
         "old_price": 59390,
         "ratings": 4.2,
         "reviews": "3k",
-        "category": "Laptops"
+        "category": "Laptops",
+        "images": [paths[8]],
     },
     "010": {
         "name": "K617 Fizz 60% Wired RGB Gaming Keyboard, 61 Keys", 
@@ -103,7 +111,8 @@ export const ProductData = {
         "old_price": 3499,
         "ratings": 4.7,
         "reviews": "1.3k",
-        "category": "Keyboards"
+        "category": "Keyboards",
+        "images": [paths[9]],
     },
     "011": {
         "name": "Nord CE 2 Lite 5G (Blue Tide, 128 GB)  (6 GB RAM)", 
@@ -114,7 +123,8 @@ export const ProductData = {
         "ratings": 4.4,
         "reviews": "26.7k",
         "category": "Mobiles",
-        "new": true
+        "new": true,
+        "images": [paths[10]],
     },
     "012": {
         "name": "Black Solid Portable Bluetooth Speaker", 
@@ -124,7 +134,8 @@ export const ProductData = {
         "old_price": 29999,
         "ratings": "--",
         "reviews": "--",
-        "category": "Speakers"
+        "category": "Speakers",
+        "images": [paths[11]],
     },
     "013": {
         "name": "Wings Phantom Black & Green Gaming True Wireless Earbuds With 65 ms Latency", 
@@ -135,7 +146,8 @@ export const ProductData = {
         "ratings": "4.2",
         "reviews": "12k",
         "category": "Earphones",
-        "new": true
+        "new": true,
+        "images": [paths[12]],
     },
     "014": {
         "name": "Pink & Black Luxe Lunar Sleep Tracking Stress & Heart Rate Fitness Band", 
@@ -145,7 +157,8 @@ export const ProductData = {
         "old_price": 10999,
         "ratings": "4.2",
         "reviews": "6",
-        "category": "Watches"
+        "category": "Watches",
+        "images": [paths[13]],
     },
     "015": {
         "name": "Unisex Grey Ring Bluetooth Calling Smartwatch with SpO2 05BSWAAY3", 
@@ -155,7 +168,19 @@ export const ProductData = {
         "old_price": 9999,
         "ratings": "4",
         "reviews": "69",
-        "category": "Watches"
+        "category": "Watches",
+        "images": [paths[14]],
     },
+    "016": {
+        "name": "Nothing Ear 2 Dual connection Bluetooth Headset (White, True Wireless)",
+        "brand": "Nothing",
+        "image": paths[15],
+        "price": 9999,
+        "old_price": 12999,
+        "ratings": "4.3",
+        "reviews": "250",
+        "category": "Earphones",
+        "images": [paths[15], paths[16], paths[17], paths[18], paths[19], paths[20], paths[21]]
+    }
 }
 
