@@ -1,5 +1,5 @@
 .Filter-row-container {
-    margin: 0 20px 0 var(--container-gutter-sm);
+    margin: 0 20px 0 var(--container-gutter-md);
     font-size: 14px;
 }
 
@@ -67,7 +67,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    padding: var(--container-gutter-sm);
+    padding: var(--container-gutter-md);
     outline: 1px solid var(--root-border-color);
     border-top: transparent;
     background-color: white;

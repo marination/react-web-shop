@@ -1,0 +1,123 @@
+.breadcrumbs{
+	margin-bottom: 1rem;
+	line-height: 1.5;
+}
+
+.product-info-container {
+	display: flex;
+	flex: 1;
+}
+
+.product-image-container {
+	display: flex;
+	flex: 1;
+	outline: 1px solid var(--root-border-color);
+}
+
+.vertical-image-list {
+	display: flex;
+    flex-direction: column;
+	max-height: 60vh;
+    flex: 1;
+	overflow: scroll;
+	padding: 2px;
+	border-right: 1px solid var(--root-border-color);
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.vertical-image-list::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel-thumbnail {
+	height: 100px;
+	padding: 5px;
+}
+
+.carousel-thumbnail:hover {
+	cursor: pointer;
+	outline: 2px solid var(--primary-purple);
+}
+
+.vertical-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	
+}
+
+.main-image-container {
+	height: 60vh;
+}
+
+.main-image {
+	width: 100%;
+	height: 60vh;
+	object-fit: contain;
+	transform: scale(.9);
+}
+
+.product-title {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.product-brand {
+	color: var(--muted-gray);
+	padding: .5rem 0;
+}
+
+.product-ratings-shortcut {
+	width: fit-content;
+    padding: 0.3rem 0.5rem 0.1rem 0.5rem;
+    margin-top: 0.5rem;
+	outline: 1px solid var(--root-border-color);
+	border-radius: 4px;
+}
+
+.product-ratings-shortcut:hover {
+	cursor: pointer;
+	outline: 1px solid var(--black);
+}
+
+.product-ratings-shortcut-svg {
+	margin: 0 .3rem;
+}
+
+.product-ratings-shortcut-svg > svg {
+	width: 18px;
+	fill: var(--primary-purple);
+	stroke: transparent;
+}
+
+.product-price-section {
+	margin-top: 1rem;
+}
+
+.product-price {
+	color: #282c3f;
+    margin-right: 12px;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: 'Prompt', sans-serif;
+}
+
+.product-old-price {
+	margin-right: 12px;
+}
+
+.product-add-to-cart {
+	margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: 45%;
+    background-color: transparent;
+    border: 1px solid var(--primary-purple);
+    color: var(--primary-purple);
+}
+
+.product-add-to-cart:hover {
+	cursor: pointer;
+	background-color: var(--primary-purple);
+	color: white;
+}
