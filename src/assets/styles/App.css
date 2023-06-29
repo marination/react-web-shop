@@ -557,8 +557,24 @@ div[role=button], button {
 	font-size: 20px;
 }
 
+.wght-500 {
+	font-weight: 500;
+}
+
+.wght-600 {
+	font-weight: 600;
+}
+
+.wght-700 {
+	font-weight: 700;
+}
+
 .w-50 {
 	width: 50%;
+}
+
+.d-flex {
+	display: flex;
 }
 
 .svg-container {
