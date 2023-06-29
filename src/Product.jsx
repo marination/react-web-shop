@@ -4,7 +4,9 @@ import './assets/styles/Products.css';
 import { ProductData } from './ProductData';
 import { useParams } from "react-router-dom";
 import { ImageCarousel } from './components/ImageCarousel';
+import { VariantSelector } from './components/VariantSelector';
 import { ReactComponent as StarIcon } from "./assets/icons/star.svg";
+import { ReactComponent as FileIcon } from "./assets/icons/file-text.svg";
 
 export const Product = () => {
 	const { id } = useParams();
@@ -16,14 +18,18 @@ export const Product = () => {
 				"marginTop": "70px", 
 				"padding": "var(--container-gutter-sm)",
 			}}>
-			<div className='breadcrumbs f-medium'>
-				Home / Accessories / Watches / Smart Watches / Noise
-			</div>
 
 			<div className='product-info-container'>
 				<div className='w-50'>
-					<ImageCarousel images={item_data.images}></ImageCarousel>
+					<div className='product-sticky-container'>
+						<div className='breadcrumbs f-medium'>
+							Home / Accessories / Watches / Smart Watches / Noise
+						</div>
+						
+						<ImageCarousel images={item_data.images}></ImageCarousel>
+					</div>
 				</div>
+				
 
 				<div className='w-50 product-data-container' style={{paddingLeft: "20px"}}>
 					<p className='m-0 product-title'>{item_data.name}</p>
@@ -56,9 +62,23 @@ export const Product = () => {
 					</div>
 
 					<button className='product-add-to-cart'>
-						
-						<span className='f-large'>Add to Cart</span>
+						<span className='f-normal'>Add to Cart</span>
 					</button>
+
+					<VariantSelector variant_data={item_data.variant_data}></VariantSelector>
+
+					<div className='product-description'>
+						<div className='product-description-title'>
+							<span className='f-large wght-600'>Product Description</span>
+							<span className='svg-container product-description-icon'>
+								<FileIcon></FileIcon>
+							</span>
+						</div>
+						
+						<div className='product-description-data'>
+							{item_data.description}
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

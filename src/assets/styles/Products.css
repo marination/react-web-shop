@@ -109,8 +109,8 @@
 
 .product-add-to-cart {
 	margin-top: 1.5rem;
-    padding: 0.5rem 1rem;
-    width: 45%;
+    padding: 0.6rem 1rem;
+    width: 30%;
     background-color: transparent;
     border: 1px solid var(--primary-purple);
     color: var(--primary-purple);
@@ -120,4 +120,40 @@
 	cursor: pointer;
 	background-color: var(--primary-purple);
 	color: white;
+}
+
+.variant-group-container {
+	margin-top: 2rem;
+}
+
+.variant-pill-container {
+	padding: .5rem 1rem;
+	outline: 1px solid var(--root-border-color);
+	margin-right: 1rem;
+	font-weight: 600;
+}
+
+.variant-pill-container:hover {
+	cursor: pointer;
+	color: var(--primary-purple);
+	outline: 1px solid var(--primary-purple);
+}
+
+.product-description {
+	margin-top: 2rem;
+}
+
+.product-description-data {
+	margin-top: 1rem;
+}
+
+.product-description-icon > svg {
+	width: 20px;
+	stroke-width: 1px;
+	margin: 0 .5rem;
+}
+
+.product-sticky-container {
+	position: sticky;
+	top: 90px;
 }

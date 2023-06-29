@@ -180,7 +180,19 @@ export const ProductData = {
         "ratings": "4.3",
         "reviews": "250",
         "category": "Earphones",
-        "images": [paths[15], paths[16], paths[17], paths[18], paths[19], paths[20], paths[21]]
+        "images": [paths[15], paths[16], paths[17], paths[18], paths[19], paths[20], paths[21]],
+        "variant_data": {"Size": ["S", "M", "L", "XL"], "Color": ["White", "Black"]},
+        "description": `With better sound.& clarity.Perfecting the path from artist to ear. So that music sounds just as it was intended.
+        A new dual chamber speaker design and our 11.6 mm dynamic driver ensures playback reveals every detail.. For even richer high notes, and effortlessly powerful bass.
+        Transporting you to the recording studio, wherever you are. Ear (2) is Hi-Res Audio certified and supports LHDC 5.0 for high-resolution streaming over Bluetooth.
+        For powerfully pure audio with no quality damage.
+        Silence the unwanted noise with Active Noise Cancellation (ANC) up to 40db.
+        Switch between three levels of ANC or let Ear (2) take control.
+        Adaptive Mode detects distractions in your environment before you do. Or take your listening to the next level with Personalised ANC.
+        Noise cancellation tailored to the exact shape of your ears.Ear (2) celebrates the beauty of raw technology and expert craftsmanship with a design thats wonderfully original.
+        We made the transparent charging case with a glass-like, pressure-resistant material for a premium feel
+        Warranty: 1 year
+        Warranty provided by Brand/Manufacturer`,
     }
 }
 
