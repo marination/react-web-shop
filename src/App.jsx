@@ -3,7 +3,6 @@ import { CountDown } from './components/Countdown';
 import Filters from './components/Filters';
 import { MobileFiltersToggler, MobileFiltersDrawer } from './components/MobileFilters';
 import ProductGrid from './components/ProductGrid';
-import { Footer } from './components/Footer';
 
 function App() {
 	return (
@@ -18,8 +17,6 @@ function App() {
 					
 					<ProductGrid></ProductGrid>
 				</div>
-
-			<Footer></Footer>
 		</div>
 		
 		

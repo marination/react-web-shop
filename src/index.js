@@ -8,6 +8,7 @@ import ErrorPage from './error-page';
 import { Product } from './Product';
 import CartProvider from './context/CartContext';
 import Navbar from './components/Navbar';
+import { Footer } from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -29,6 +30,7 @@ root.render(
 		<CartProvider>
 				<Navbar></Navbar>
 				<RouterProvider router={router} />
+				<Footer></Footer>
 		</CartProvider>
 	</React.StrictMode>
 );
