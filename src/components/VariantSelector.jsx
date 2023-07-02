@@ -1,5 +1,5 @@
-const VariantGroup = (props) => {
-	let pills = props.variants.map((variant, index) => {
+const VariantGroup = ({title, variants}) => {
+	let pills = variants.map((variant, index) => {
 		return (
 			<div className="variant-pill-container" key={index}>
 				{variant}
@@ -9,7 +9,7 @@ const VariantGroup = (props) => {
 
 	return (
 		<div className="variant-group-container">
-			<p className="f-normal wght-700">{props.title}</p>
+			<p className="f-normal wght-700">{title}</p>
 			<div className="variant-pill-group d-flex">
 				{pills}
 			</div>
@@ -17,11 +17,11 @@ const VariantGroup = (props) => {
 	)
 }
 
-export const VariantSelector = (props) => {
-	// props.variant_data = {"Size": ["M", "XL"], "Color": ["Red", "Blue"]}
-	let groups = Object.keys(props.variant_data).map((attribute, index) => {
+export const VariantSelector = ({variant_data}) => {
+	// variant_data = {"Size": ["M", "XL"], "Color": ["Red", "Blue"]}
+	let groups = Object.keys(variant_data).map((attribute, index) => {
 		return (
-			<VariantGroup title={attribute} variants={props.variant_data[attribute]} key={index}>
+			<VariantGroup title={attribute} variants={variant_data[attribute]} key={index}>
 			</VariantGroup>
 		)
 	})

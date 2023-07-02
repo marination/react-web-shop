@@ -557,6 +557,18 @@ div[role=button], button {
 	font-size: 20px;
 }
 
+.f-2xl {
+	font-size: 22px;
+}
+
+.f-4xl {
+	font-size: 24px;
+}
+
+.f-5xl {
+	font-size: 26px;
+}
+
 .wght-500 {
 	font-weight: 500;
 }
