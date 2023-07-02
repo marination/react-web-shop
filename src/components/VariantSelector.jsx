@@ -1,7 +1,7 @@
 const VariantGroup = ({title, variants}) => {
 	let pills = variants.map((variant, index) => {
 		return (
-			<div className="variant-pill-container" key={index}>
+			<div className="variant-pill-container f-medium" key={index}>
 				{variant}
 			</div>
 		)

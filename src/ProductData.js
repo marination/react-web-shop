@@ -183,16 +183,40 @@ export const ProductData = {
         "images": [paths[15], paths[16], paths[17], paths[18], paths[19], paths[20], paths[21]],
         "variant_data": {"Size": ["S", "M", "L", "XL"], "Color": ["White", "Black"]},
         "description": `With better sound.& clarity.Perfecting the path from artist to ear. So that music sounds just as it was intended.
-        A new dual chamber speaker design and our 11.6 mm dynamic driver ensures playback reveals every detail.. For even richer high notes, and effortlessly powerful bass.
-        Transporting you to the recording studio, wherever you are. Ear (2) is Hi-Res Audio certified and supports LHDC 5.0 for high-resolution streaming over Bluetooth.
-        For powerfully pure audio with no quality damage.
-        Silence the unwanted noise with Active Noise Cancellation (ANC) up to 40db.
-        Switch between three levels of ANC or let Ear (2) take control.
-        Adaptive Mode detects distractions in your environment before you do. Or take your listening to the next level with Personalised ANC.
-        Noise cancellation tailored to the exact shape of your ears.Ear (2) celebrates the beauty of raw technology and expert craftsmanship with a design thats wonderfully original.
-        We made the transparent charging case with a glass-like, pressure-resistant material for a premium feel
-        Warranty: 1 year
-        Warranty provided by Brand/Manufacturer`,
+            A new dual chamber speaker design and our 11.6 mm dynamic driver ensures playback reveals every detail.. For even richer high notes, and effortlessly powerful bass.
+            Transporting you to the recording studio, wherever you are. Ear (2) is Hi-Res Audio certified and supports LHDC 5.0 for high-resolution streaming over Bluetooth.
+            For powerfully pure audio with no quality damage.
+            Silence the unwanted noise with Active Noise Cancellation (ANC) up to 40db.
+            Switch between three levels of ANC or let Ear (2) take control.
+            Adaptive Mode detects distractions in your environment before you do. Or take your listening to the next level with Personalised ANC.
+            Noise cancellation tailored to the exact shape of your ears.Ear (2) celebrates the beauty of raw technology and expert craftsmanship with a design thats wonderfully original.
+            We made the transparent charging case with a glass-like, pressure-resistant material for a premium feel
+            Warranty: 1 year
+            Warranty provided by Brand/Manufacturer`,
+        "specifications": {
+            "General": [
+                {"key": "Model Name", "value": "Ear (2)"}, 
+                {"key": "Headphone Type", "value": "Wireless"},
+                {"key": "Inline Remote", "value": "Yes"},
+                {"key": "Sales Package", "value": "Ear (2), Wireless Charging Case, USB-C Charging Cable, User Manual, Safety Information, Warranty Card"},
+                {"key": "Connectivity", "value": "Bluetooth"},
+                {"key": "Headphone Design", "value": "Earbud"},
+            ],
+            "Product Details": [
+                {"key": "Driver Type", "value": "Dynamic"}, 
+                {"key": "Driver Size", "value": "10 mm"},
+                {"key": "Water Resistant", "value": "Yes"},
+                {"key": "Sweat Proof", "value": "Yes"},
+                {"key": "Deep Bass", "value": "Yes"},
+                {"key": "With Microphone", "value": "Yes"},
+            ],
+            "Connectivity Features": [
+                {"key": "Bluetooth Version", "value": "5.2"},
+                {"key": "Bluetooth Range", "value": "10 m"},
+                {"key": "Bluetooth Profiles", "value": "HFP/HSP/AVRCP/A2DP"},
+                {"key": "Headphone Power Source", "value": "Battery"},
+            ]
+        }
     }
 }
 

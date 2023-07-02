@@ -157,3 +157,37 @@
 	position: sticky;
 	top: 90px;
 }
+
+.product-specifications-container {
+	margin-top: 2rem;
+	border: 1px solid var(--root-border-color);
+}
+
+.product-specifications-heading {
+	margin: 0;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-bottom: 1px solid var(--root-border-color);
+}
+
+.product-specifications {
+	margin: 0 1rem;
+}
+
+.product-specification-title {
+	margin: 0;
+}
+
+.product-specification-table{
+	margin-bottom: .5rem;
+	width: 100%;
+}
+
+.product-specification-row  td {
+	padding: .5rem;
+}
+
+.specification-name {
+	color: var(--muted-gray);
+	width: 15%;
+}

@@ -5,6 +5,7 @@ import { ProductData } from './ProductData';
 import { useParams } from "react-router-dom";
 import { ImageCarousel } from './components/ImageCarousel';
 import { VariantSelector } from './components/VariantSelector';
+import {ProductSpecifications} from './components/ProductSpecifications';
 import { ReactComponent as StarIcon } from "./assets/icons/star.svg";
 import { ReactComponent as FileIcon } from "./assets/icons/file-text.svg";
 
@@ -75,12 +76,15 @@ export const Product = () => {
 							</span>
 						</div>
 						
-						<div className='product-description-data'>
+						<div className='product-description-data f-normal'>
 							{item_data.description}
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<ProductSpecifications specifications={item_data.specifications}>
+			</ProductSpecifications>
 		</div>
 	)
 }
