@@ -47,7 +47,7 @@ const Navbar = () => {
 
 		return (
 				<div className='Navbar'>
-					<Logo></Logo>
+					<a href="/"><Logo></Logo></a>
 
 					<div className='Nav-categories'>
 						<div className='Nav-link'>Watches</div>
@@ -58,7 +58,12 @@ const Navbar = () => {
 					</div>
 
 					<div className='Search-container'>
-						<input placeholder='Search for products ..' className='Search-bar'></input>
+						<input 
+							placeholder='Search for products ..' 
+							className='Search-bar'
+							id='site-search-bar'
+						>
+						</input>
 					</div>
 
 					<div className='Nav-link'>

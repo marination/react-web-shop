@@ -39,7 +39,11 @@ const ProductCard = (props) => {
 		</div>
 
 		<div className='Item-meta-details'>
-			<h3 className='f-normal pb-5'>{data.brand}</h3>
+			<h3 className='f-normal pb-5'>
+				<a href={"/product/" + props.id} class="card-link">
+					{data.brand}
+				</a>
+			</h3>
 			<h4 className='text-muted f-medium'>{data.name}</h4>
 
 			<div className='Item-price-details'>

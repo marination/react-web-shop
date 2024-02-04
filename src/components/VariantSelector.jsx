@@ -19,6 +19,10 @@ const VariantGroup = ({title, variants}) => {
 
 export const VariantSelector = ({variant_data}) => {
 	// variant_data = {"Size": ["M", "XL"], "Color": ["Red", "Blue"]}
+	if (!variant_data) {
+		return null
+	}
+	
 	let groups = Object.keys(variant_data).map((attribute, index) => {
 		return (
 			<VariantGroup title={attribute} variants={variant_data[attribute]} key={index}>

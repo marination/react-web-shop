@@ -34,8 +34,8 @@ export const MobileFiltersDrawer = () => {
 			</header>
 
 			<div className="Filter-body" style={{"flexGrow": ".85"}}>
-				<BrandFilters></BrandFilters>
-				<CategoryFilters></CategoryFilters>
+				<BrandFilters forMobile={true}></BrandFilters>
+				<CategoryFilters forMobile={true}></CategoryFilters>
 			</div>
 
 			<div className="Filters-CTA">

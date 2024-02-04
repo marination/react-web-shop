@@ -1,4 +1,8 @@
 const ProductSpecificationGroup = ({title, specifications}) => {
+	if (!specifications) {
+		return null
+	}
+
 	let rows = specifications.map((specification) => {
 		return (
 			<tr className="product-specification-row" key={specification.key}>
@@ -26,6 +30,10 @@ export const ProductSpecifications = ({specifications}) => {
 	// 	"Product Details": [{"key": "Driver Type", "value": "Dynamic"}, {"key": "Driver Size", "value": "10 mm"}],
 	// ...
 	// }
+	if (!specifications) {
+		return null
+	}
+	
 	let groups = Object.keys(specifications).map((group) => {
 		return (
 			<ProductSpecificationGroup title={group} specifications={specifications[group]} key={group}>

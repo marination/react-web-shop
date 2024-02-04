@@ -3,6 +3,10 @@
 	line-height: 1.5;
 }
 
+.product-area {
+	min-height: calc(100vh - 180px);
+}
+
 .product-info-container {
 	display: flex;
 	flex: 1;
@@ -98,7 +102,7 @@
 .product-price {
 	color: #282c3f;
     margin-right: 12px;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 600;
 	font-family: 'Prompt', sans-serif;
 }
@@ -108,12 +112,11 @@
 }
 
 .product-add-to-cart {
+	color: white;
 	margin-top: 1.5rem;
     padding: 0.6rem 1rem;
     width: 30%;
-    background-color: transparent;
-    border: 1px solid var(--primary-purple);
-    color: var(--primary-purple);
+	border-radius: 4px;
 }
 
 .product-add-to-cart:hover {

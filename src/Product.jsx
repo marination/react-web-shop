@@ -8,10 +8,12 @@ import { VariantSelector } from './components/VariantSelector';
 import {ProductSpecifications} from './components/ProductSpecifications';
 import { ReactComponent as StarIcon } from "./assets/icons/star.svg";
 import { ReactComponent as FileIcon } from "./assets/icons/file-text.svg";
+import { useCart } from './context/CartContext';
 
 export const Product = () => {
 	const { id } = useParams();
 	const item_data = ProductData[id];
+	const { increaseCartQty } = useCart();
 
 	return (
 		<div className='product-area' 
@@ -62,29 +64,42 @@ export const Product = () => {
 						</span>
 					</div>
 
-					<button className='product-add-to-cart'>
+					<button 
+						className='product-add-to-cart Micro-add-to-cart' 
+						onClick={() => increaseCartQty(id)}
+					>
 						<span className='f-normal'>Add to Cart</span>
 					</button>
 
 					<VariantSelector variant_data={item_data.variant_data}></VariantSelector>
 
-					<div className='product-description'>
-						<div className='product-description-title'>
-							<span className='f-large wght-600'>Product Description</span>
-							<span className='svg-container product-description-icon'>
-								<FileIcon></FileIcon>
-							</span>
-						</div>
-						
-						<div className='product-description-data f-normal'>
-							{item_data.description}
-						</div>
-					</div>
+					{
+						item_data.description ? 
+						<ProductDescription description={item_data.description}>
+						</ProductDescription> 
+						: null
+					}
 				</div>
 			</div>
 
-			<ProductSpecifications specifications={item_data.specifications}>
-			</ProductSpecifications>
+			<ProductSpecifications specifications={item_data.specifications}></ProductSpecifications>
+		</div>
+	)
+}
+
+const ProductDescription = ({description}) => {
+	return (
+		<div className='product-description'>
+			<div className='product-description-title'>
+				<span className='f-large wght-600'>Product Description</span>
+				<span className='svg-container product-description-icon'>
+					<FileIcon></FileIcon>
+				</span>
+			</div>
+			
+			<div className='product-description-data f-normal'>
+				{description}
+			</div>
 		</div>
 	)
 }

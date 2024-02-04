@@ -1,7 +1,7 @@
 import { ReactComponent as PlusIcon } from "../assets/icons/plus.svg";
 import { useState } from 'react';
 
-const FilterSection = ({title, filterValues, type}) => {
+const FilterSection = ({title, filterValues, type, forMobile=false}) => {
 	let [isFilterOpen, setFilterDisplay] = useState(false);
 	const toggleFilterDisplay = () => {
 		setFilterDisplay((isOpen) => !isOpen)
@@ -11,7 +11,8 @@ const FilterSection = ({title, filterValues, type}) => {
 	return (
 		<div className="Filter-row-container">
 			<FilterHeader title={title} toggleFilterDisplay={toggleFilterDisplay} isOpen={isFilterOpen}></FilterHeader>
-			<FilterBody {...filter_data} ></FilterBody>
+			<FilterBody filter_data={filter_data} forMobile={forMobile}>
+			</FilterBody>
 		</div>
 	);
 }
@@ -31,13 +32,20 @@ const FilterHeader = ({title, toggleFilterDisplay, isOpen}) => {
 	);
 }
 
-const FilterBody = (filter_data) => {
+const FilterBody = ({filter_data, forMobile=false}) => {
 	let {filter_values, type, isOpen} = filter_data;
 
 	let FilterCheckboxList = []
 	filter_values.forEach((value, index) => {
 		let filter_value_data = {"value": value, "idx": index, "type": type};
-		FilterCheckboxList.push(<FilterCheckboxRow {...filter_value_data} key={index}></FilterCheckboxRow>)
+		FilterCheckboxList.push(
+			<FilterCheckboxRow 
+				filter_value_data={filter_value_data} 
+				forMobile={forMobile} 
+				key={index}
+			>
+			</FilterCheckboxRow>
+		)
 	})
 
 	return (
@@ -47,18 +55,20 @@ const FilterBody = (filter_data) => {
 	);
 }
 
-const FilterCheckboxRow = (props) => {
-	let id = 'Filter-' + props.type + '-' + props.idx;
-	let name = 'Filter-'+ props.type;
+const FilterCheckboxRow = ({filter_value_data, forMobile=false}) => {
+	let data = filter_value_data;
+	let id = 'Filter-' + data.type + '-' + data.idx;
+	id = id + (forMobile ? '-mobile' : '');
+	let name = 'Filter-'+ data.type;
 
 	return (
 		<div className='Filter-row-body-item'>
 			<input type={'checkbox'} 
 				name={name} 
 				id={id} 
-				value={props.value}>
+				value={data.value}>
 			</input>
-			<label htmlFor={id}>{props.value}</label>
+			<label htmlFor={id}>{data.value}</label>
 		</div>
 	);
 }

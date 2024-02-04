@@ -4,25 +4,37 @@ import { ProductData } from '../ProductData';
 import FilterSection from './FilterBuilder';
 
 
-export const BrandFilters = () => {
+export const BrandFilters = ({forMobile=false}) => {
 	const Brands = new Set()
 	Object.keys(ProductData).forEach((key) => {
 		Brands.add(ProductData[key].brand);
 	})
 
 	return (
-		<FilterSection title={'Brands'} filterValues={Brands} type={'brand'}></FilterSection>
+		<FilterSection 
+			title={'Brands'} 
+			filterValues={Brands} 
+			type={'brand'}
+			forMobile={forMobile}
+		>
+		</FilterSection>
 	);
 }
 
-export const CategoryFilters = () => {
+export const CategoryFilters = ({forMobile=false}) => {
 	const Categories = new Set()
 	Object.keys(ProductData).forEach((key) => {
 		Categories.add(ProductData[key].category);
 	})
 
 	return (
-		<FilterSection title={'Categories'} filterValues={Categories} type={'category'}></FilterSection>
+		<FilterSection 
+			title={'Categories'} 
+			filterValues={Categories} 
+			type={'category'}
+			forMobile={forMobile}
+		>
+		</FilterSection>
 	);
 	
 }
