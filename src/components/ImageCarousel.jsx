@@ -14,14 +14,14 @@ export const ImageCarousel = (props) => {
 								onClick={() => setdisplayImage(image)}
 								key={index}
 							>
-								<img className="vertical-image" src={image}></img>
+								<img className="vertical-image" src={image} alt="Carousel"></img>
 							</div>
 						)
 					})
 				}
 			</div>
 			<div className="main-image-container" style={{width: "85%"}}>
-				<img className="main-image" src={displayImage} alt={"Image"}></img>
+				<img className="main-image" src={displayImage} alt="Primary Product"></img>
 			</div>
 		</div>
 	)
